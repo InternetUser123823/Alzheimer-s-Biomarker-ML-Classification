@@ -30,11 +30,11 @@ All three models were evaluated using stratified 5-fold cross-validation and com
 
 ## Files
 Logistic regression model: logistic_regression.py    
-Decision tree model: decision_tree.py 
-Random forest model: random_forest.py   
-Random forest model modified with threshold search: rf_test_threshold.py  
-Project description: README.md                
-Dependencies: requirements.txt  
+Decision tree model: decision_tree.py    
+Random forest model modified with threshold search: rf_test_threshold.py    
+Random forest model: random_forest.py    
+Project description: README.md    
+Dependencies: requirements.txt    
 
 ## How to Run
 Commands shown for VSCode on macOS; use `python` instead of `python3` if that's how Python 3 is set up on your system.
