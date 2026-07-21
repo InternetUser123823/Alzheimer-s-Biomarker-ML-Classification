@@ -14,10 +14,10 @@ Number of Nodes: 15
 
 ### Confusion Matrix
 
-
-[[29 2]
-[ 4 21]]
-
+|              | Predicted 0 | Predicted 1 |
+|--------------|-------------|-------------|
+| Actual 0     | 29          | 2           |
+| Actual 1     | 4           | 21          |
 
 ### Classification Report
 
@@ -27,9 +27,6 @@ Number of Nodes: 15
        1       0.91      0.84      0.88        25
 
 accuracy                           0.89        56
-
-macro avg 0.90 0.89 0.89 56
-weighted avg 0.89 0.89 0.89 56
 
 ROC-AUC: 0.934
 
@@ -57,10 +54,10 @@ Number of Nodes: 53.4
 
 ### Confusion Matrix
 
-
-[[28 3]
-[ 6 19]]
-
+|              | Predicted 0 | Predicted 1 |
+|--------------|-------------|-------------|
+| Actual 0     | 28          | 3           |
+| Actual 1     | 6           | 19          |
 
 ### Classification Report
 
@@ -70,9 +67,6 @@ Number of Nodes: 53.4
        1       0.86      0.76      0.81        25
 
 accuracy                           0.84        56
-
-macro avg 0.84 0.83 0.84 56
-weighted avg 0.84 0.84 0.84 56
 
 ROC-AUC: 0.839
 
@@ -102,10 +96,10 @@ Number of Nodes: 24.2
 
 ### Confusion Matrix
 
-
-[[27 4]
-[ 7 18]]
-
+|              | Predicted 0 | Predicted 1 |
+|--------------|-------------|-------------|
+| Actual 0     | 27          | 4           |
+| Actual 1     | 7           | 18          |
 
 ### Classification Report
 
@@ -115,9 +109,6 @@ Number of Nodes: 24.2
        1       0.82      0.72      0.77        25
 
 accuracy                           0.80        56
-
-macro avg 0.81 0.80 0.80 56
-weighted avg 0.80 0.80 0.80 56
 
 ROC-AUC: 0.905
 
@@ -145,10 +136,10 @@ Number of Nodes: 24.2
 
 ### Confusion Matrix
 
-
-[[27 4]
-[ 7 18]]
-
+|              | Predicted 0 | Predicted 1 |
+|--------------|-------------|-------------|
+| Actual 0     | 27          | 4           |
+| Actual 1     | 7           | 18          |
 
 ### Classification Report
 
@@ -158,9 +149,6 @@ Number of Nodes: 24.2
        1       0.82      0.72      0.77        25
 
 accuracy                           0.80        56
-
-macro avg 0.81 0.80 0.80 56
-weighted avg 0.80 0.80 0.80 56
 
 ROC-AUC: 0.905
 
@@ -179,5 +167,3 @@ SES 0.000
 ### Conclusion
 
 As supported by the tree diagram, MMSE leads to the highest information reduction. This is consistent with the fact that MMSE is a clinical cognitive-assessment score closely tied to how the AD/CDR label itself is determined. On the other hand, SES showed no predictive value as a feature for this model.
-
-I didn't rewrite any sentences or change your conclusions — only converted it into GitHub-friendly Markdown.
