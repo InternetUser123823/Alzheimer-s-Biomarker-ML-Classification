@@ -21,14 +21,14 @@ Random Forest — an ensemble of many decision trees, each trained on a random s
 
 All three models were evaluated using stratified 5-fold cross-validation and compared on F1 score, ROC-AUC, and confusion matrix breakdown, with class-weighted training and threshold tuning applied to address the importance of correctly identifying AD cases.
 
-## Results
+# Results
 - Accuracy:
 - Precision:
 - Recall:
 - F1 Score:
 - Any interesting findings
 
-## Files
+# Files
 Logistic regression model: logistic_regression.py    
 Decision tree model: decision_tree.py    
 Random forest model modified with threshold search: rf_test_threshold.py    
@@ -36,7 +36,7 @@ Random forest model: random_forest.py
 Project description: README.md    
 Dependencies: requirements.txt    
 
-## How to Run
+# How to Run
 Commands shown for VSCode on macOS; use `python` instead of `python3` if that's how Python 3 is set up on your system.
 pip install -r requirements.txt
 python3 logistic_regression.py
@@ -44,10 +44,10 @@ python3 decision_tree.py
 python3 random_forest.py
 python3 rf_test_threshold.py
 
-## Future Improvements
+# Future Improvements
 - Hyperparameter tuning
 - Cross-validation
 - Feature engineering
 
-# Note
+## Note
 This project was developed as part of my personal learning so I could get more familiar with machine learning models, along with some common ML workflows.
