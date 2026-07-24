@@ -209,8 +209,11 @@ print(confusion_matrix(y_test, test_pred))
 print("\nClassification Report:")
 print(classification_report(y_test, test_pred))
 print(f"ROC-AUC: {roc_auc_score(y_test, test_prob):.3f}")
+test_f1 = f1_score(y_test, test_pred)
+print(f"Test F1: {test_f1:.3f}")
 
 # Feature importances (averaged across all trees in the forest)
 print("\nFeature Importances:")
 for name, importance in sorted(zip(features, best_model.feature_importances_), key=lambda x: -x[1]):
     print(f"  {name:<10} {importance:.3f}")
+
