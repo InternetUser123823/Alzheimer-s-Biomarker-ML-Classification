@@ -204,7 +204,8 @@ print(confusion_matrix(y_test, test_pred))
 print("\nClassification Report:")
 print(classification_report(y_test, test_pred))
 print(f"ROC-AUC: {roc_auc_score(y_test, test_prob):.3f}")
-
+test_f1 = f1_score(y_test, test_pred)
+print(f"Test F1: {test_f1:.3f}")
 
 # Feature coefficients (log-odds weights)
 print("\nFeature Coefficients:")
