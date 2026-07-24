@@ -32,7 +32,9 @@ All three models were evaluated using stratified 5-fold cross-validation and com
 Logistic regression model: logistic_regression.py    
 Decision tree model: decision_tree.py    
 Random forest model modified with threshold search: rf_test_threshold.py    
-Random forest model: random_forest.py    
+Random forest model: random_forest.py   
+XGBoost model: xg_boost.py          
+XGBoost model modified with evaluation set early stopping: xg_boost_eval.py    
 Project description: README.md    
 Dependencies: requirements.txt    
 
