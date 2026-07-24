@@ -4,7 +4,7 @@ import numpy as np
 from sklearn.model_selection import train_test_split, StratifiedKFold, cross_validate
 from sklearn.tree import DecisionTreeClassifier, plot_tree
 import matplotlib.pyplot as plt
-from sklearn.metrics import roc_auc_score, classification_report, confusion_matrix
+from sklearn.metrics import roc_auc_score, classification_report, confusion_matrix, f1_score
 from sklearn.impute import SimpleImputer
 
 # Load data
@@ -134,11 +134,11 @@ test_prob = best_model.predict_proba(X_test)[:, 1]
 
 print("Confusion Matrix:")
 print(confusion_matrix(y_test, test_pred))
-
 print("\nClassification Report:")
 print(classification_report(y_test, test_pred))
-
 print(f"ROC-AUC: {roc_auc_score(y_test, test_prob):.3f}")
+test_f1 = f1_score(y_test, test_pred)
+print(f"Test F1: {test_f1:.3f}")
 
 # Feature importances 
 print("\nFeature Importances:")
