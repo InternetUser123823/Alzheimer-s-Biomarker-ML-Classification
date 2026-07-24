@@ -133,6 +133,7 @@ for lam in lambda_values:
 thresholds = [0.30, 0.40, 0.50, 0.60, 0.70]
 
 best_f1 = 0.0
+best_f1_std = 0.0
 best_model = None
 best_name = ""
 best_threshold = 0.5
@@ -175,6 +176,7 @@ for model_dict in models:
         fold_best_thresholds.append(best_fold_threshold)
 
     mean_cv_f1 = sum(fold_best_f1s) / len(fold_best_f1s)
+    cv_f1_std = (sum((f1 - mean_cv_f1) ** 2 for f1 in fold_best_f1s) / len(fold_best_f1s)) ** 0.5
     # use the most common best threshold across folds
     mean_best_threshold = max(set(fold_best_thresholds), key=fold_best_thresholds.count)
 
@@ -183,6 +185,7 @@ for model_dict in models:
     if mean_cv_f1 > best_f1:
         best_model = model_dict["model"]
         best_f1 = mean_cv_f1
+        best_f1_std = cv_f1_std
         best_name = model_dict["name"]
         best_X_test_set = model_dict["X_test"]
         best_threshold = mean_best_threshold
@@ -191,6 +194,7 @@ for model_dict in models:
 
 print(f"\nBest model: {best_name}")
 print(f"Best CV F1 score: {best_f1:.3f}")
+print(f"Best CV F1 SD: {best_f1_std:.3f}")
 print(f"Best threshold: {best_threshold}")
 
 # Final evaluation on test set
