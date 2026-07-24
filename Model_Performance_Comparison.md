@@ -4,7 +4,7 @@ Final comparison across all four models, evaluated on the same held-out
 test set (56 samples, `random_state=42`) using stratified 5-fold 
 cross-validation for model selection.
 
-| Model | Run | Test F1 | CV F1 Mean | CV F1 SD | Accuracy | ROC-AUC | Threshold | Precision (AD) | Recall (AD) | F1 (AD) | False Positives | False Negatives | Best Parameters |
+| Model | Run | Test F1 | CV F1 Mean | CV F1 SD | Accuracy | Test ROC-AUC | Threshold | Precision (AD) | Recall (AD) | F1 (AD) | False Positives | False Negatives | Best Parameters |
 |-------|-----|:-------:|:----------:|:--------:|:--------:|:-------:|:---------:|:--------------:|:-----------:|:-------:|:---------------:|:---------------:|-----------------|
 | Logistic Regression | Run 7 | **0.814** | 0.812 | 0.051 | 0.80 | 0.926 | 0.4 | 0.71 | **0.96** | 0.81 | 10 | **1** | L2, λ = 40 |
 | Decision Tree | Run 3 | 0.766 | 0.763 | **0.046** | 0.80 | 0.905 | 0.5 (default) | **0.82** | 0.72 | 0.77 | **4** | 7 | Depth = 5, Split = 2, Leaf = 10, Mean Nodes = 24.2 |
