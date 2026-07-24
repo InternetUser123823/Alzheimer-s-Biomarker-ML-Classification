@@ -19,7 +19,9 @@ Decision Tree — a single tree that splits data on feature thresholds to separa
 
 Random Forest — an ensemble of many decision trees, each trained on a random subset of the data and features, with predictions averaged together. Reduces the variance/instability of a single decision tree.
 
-All three models were evaluated using stratified 5-fold cross-validation and compared on F1 score, ROC-AUC, and confusion matrix breakdown, with class-weighted training and threshold tuning applied to address the importance of correctly identifying AD cases.
+XGBoost - an ensemble of many decision trees, with each subsequent tree trained on the residual errors of the previous tree, rather than independently, allowing sequential correction of earlier mistakes.
+
+All four models were evaluated using stratified 5-fold cross-validation and compared on F1 score, ROC-AUC, and confusion matrix breakdown, with class-weighted training and threshold tuning applied to address the importance of correctly identifying AD cases.
 
 # Results
 - Accuracy:
@@ -39,12 +41,12 @@ Project description: README.md
 Dependencies: requirements.txt    
 
 # How to Run
-Commands shown for VSCode on macOS; use `python` instead of `python3` if that's how Python 3 is set up on your system.
-pip install -r requirements.txt
-python3 logistic_regression.py
-python3 decision_tree.py
-python3 random_forest.py
-python3 rf_test_threshold.py
+Commands shown for VSCode on macOS; use `python` instead of `python3` if that's how Python 3 is set up on your system.           
+pip install -r requirements.txt          
+python3 logistic_regression.py           
+python3 decision_tree.py            
+python3 random_forest.py          
+python3 rf_test_threshold.py           
 
 # Future Improvements
 - Hyperparameter tuning
