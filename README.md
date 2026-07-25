@@ -47,6 +47,8 @@ python3 logistic_regression.py
 python3 decision_tree.py            
 python3 random_forest.py          
 python3 rf_test_threshold.py           
+python3 xg_boost.py          
+python3 xg_boost_eval.py
 
 # Future Improvements
 - Hyperparameter tuning
